@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Attendstar | Tailwind Test</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Attendstar Tailwind Test">
+  <meta name="keywords" content="Attendstar, Tailwind Test">
+  <meta name="author" content="radix Graphics Team">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/style-output.css" rel="stylesheet">
+</head>
+<body class="lg:flex relative font-sans text-primary-color">
+    <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+           <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+        </svg>
+     </button>
+     
+     <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-56 px-3.5 py-4 pb-52 bg-black-color text-white h-screen transition-transform -translate-x-full lg:translate-x-0" aria-label="Sidenav">
+       <div class="overflow-y-auto h-full pb-10 min-h-56">
+        <img src="src/img/logo.svg" class="mb-11 mx-2.5 max-w-full" title="Attendstar" alt="logo" height="24px" width="148px" loading="lazy" />
+          <ul>
+              <li class="mb-1.5">
+              <a href="/" class="flex items-center px-2.5 py-3  hover:bg-secondary-color text-primary-color hover:text-white rounded-md group">
+                  <svg class="stroke-primary-color group-hover:stroke-white mr-3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.3 2.25H3.45C3.02996 2.25 2.81994 2.25 2.65951 2.33175C2.51839 2.40365 2.40365 2.51839 2.33175 2.65951C2.25 2.81994 2.25 3.02996 2.25 3.45V6.3C2.25 6.72004 2.25 6.93006 2.33175 7.09049C2.40365 7.23161 2.51839 7.34635 2.65951 7.41825C2.81994 7.5 3.02996 7.5 3.45 7.5H6.3C6.72004 7.5 6.93006 7.5 7.09049 7.41825C7.23161 7.34635 7.34635 7.23161 7.41825 7.09049C7.5 6.93006 7.5 6.72004 7.5 6.3V3.45C7.5 3.02996 7.5 2.81994 7.41825 2.65951C7.34635 2.51839 7.23161 2.40365 7.09049 2.33175C6.93006 2.25 6.72004 2.25 6.3 2.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.55 2.25H11.7C11.28 2.25 11.0699 2.25 10.9095 2.33175C10.7684 2.40365 10.6537 2.51839 10.5817 2.65951C10.5 2.81994 10.5 3.02996 10.5 3.45V6.3C10.5 6.72004 10.5 6.93006 10.5817 7.09049C10.6537 7.23161 10.7684 7.34635 10.9095 7.41825C11.0699 7.5 11.28 7.5 11.7 7.5H14.55C14.97 7.5 15.1801 7.5 15.3405 7.41825C15.4816 7.34635 15.5963 7.23161 15.6683 7.09049C15.75 6.93006 15.75 6.72004 15.75 6.3V3.45C15.75 3.02996 15.75 2.81994 15.6683 2.65951C15.5963 2.51839 15.4816 2.40365 15.3405 2.33175C15.1801 2.25 14.97 2.25 14.55 2.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M14.55 10.5H11.7C11.28 10.5 11.0699 10.5 10.9095 10.5817C10.7684 10.6537 10.6537 10.7684 10.5817 10.9095C10.5 11.0699 10.5 11.28 10.5 11.7V14.55C10.5 14.97 10.5 15.1801 10.5817 15.3405C10.6537 15.4816 10.7684 15.5963 10.9095 15.6683C11.0699 15.75 11.28 15.75 11.7 15.75H14.55C14.97 15.75 15.1801 15.75 15.3405 15.6683C15.4816 15.5963 15.5963 15.4816 15.6683 15.3405C15.75 15.1801 15.75 14.97 15.75 14.55V11.7C15.75 11.28 15.75 11.0699 15.6683 10.9095C15.5963 10.7684 15.4816 10.6537 15.3405 10.5817C15.1801 10.5 14.97 10.5 14.55 10.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6.3 10.5H3.45C3.02996 10.5 2.81994 10.5 2.65951 10.5817C2.51839 10.6537 2.40365 10.7684 2.33175 10.9095C2.25 11.0699 2.25 11.28 2.25 11.7V14.55C2.25 14.97 2.25 15.1801 2.33175 15.3405C2.40365 15.4816 2.51839 15.5963 2.65951 15.6683C2.81994 15.75 3.02996 15.75 3.45 15.75H6.3C6.72004 15.75 6.93006 15.75 7.09049 15.6683C7.23161 15.5963 7.34635 15.4816 7.41825 15.3405C7.5 15.1801 7.5 14.97 7.5 14.55V11.7C7.5 11.28 7.5 11.0699 7.41825 10.9095C7.34635 10.7684 7.23161 10.6537 7.09049 10.5817C6.93006 10.5 6.72004 10.5 6.3 10.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="text-md">Dashboard</span>
+              </a>
+              </li>
+              <li class="mb-1.5">
+              <a href="/" class="flex items-center px-2.5 py-3 bg-theme-red-color hover:bg-theme-red-color text-white hover:text-white rounded-md group">
+                  <svg class="stroke-white group-hover:stroke-white mr-3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_100_60)">
+                  <path d="M3.98722 14.5788C4.44347 13.5039 5.50869 12.75 6.75 12.75H11.25C12.4913 12.75 13.5565 13.5039 14.0128 14.5788M12 7.125C12 8.78185 10.6569 10.125 9 10.125C7.34315 10.125 6 8.78185 6 7.125C6 5.46815 7.34315 4.125 9 4.125C10.6569 4.125 12 5.46815 12 7.125ZM16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_100_60">
+                  <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  <span class="text-md">My Account</span>
+              </a>
+              </li>
+          </ul>
+          <ul class="pt-2.5 mt-2.5 space-y-2 border-t border-secondary-color">
+                <li class="mb-1.5">
+                    <a href="/" class="flex items-center px-2.5 py-3  hover:bg-secondary-color text-primary-color hover:text-white rounded-md group">
+                    <svg class="stroke-primary-color group-hover:stroke-white mr-3" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12.75L15.75 9M15.75 9L12 5.25M15.75 9H6.75M6.75 2.25H5.85C4.58988 2.25 3.95982 2.25 3.47852 2.49524C3.05516 2.71095 2.71095 3.05516 2.49524 3.47852C2.25 3.95982 2.25 4.58988 2.25 5.85V12.15C2.25 13.4101 2.25 14.0402 2.49524 14.5215C2.71095 14.9448 3.05516 15.289 3.47852 15.5048C3.95982 15.75 4.58988 15.75 5.85 15.75H6.75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-md">Sign Out</span>
+                    </a>
+                </li>
+          </ul>
+       </div>
+       <div class="justify-center w-full flex z-20">
+        <div class="bg-gradient-to-b from-chat-from from-0% to-chat-to to-100% rounded-large px-4 pt-46px pb-5 mt-auto relative">
+            <div class="bg-chat-from h-72 w-72 flex items-center justify-center rounded-full text-center absolute -top-9 border-4 left-1/2 -translate-x-1/2 border-black-color">
+              <img src="./src/img/ic-chat.svg" height="40px" width="40px" alt="chat" title="chat" />
+            </div>
+            <div class="text-center">
+              <p class="text-sm leading-18 font-medium text-white mb-0.5">Event Manager Support</p>
+              <a href="tel:+6152231973" class="text-md leading-20 font-semibold text-white hover:underline">(615) 223-1973</a>
+            </div>
+            <hr class="my-2.5 bg-white opacity-30">
+            <div class="flex flex-wrap gap-1.5">
+              <a href="/" class="text-xs leading-4 font-medium text-white block w-full hover:underline">News & Update</a>
+              <a href="/" class="text-xs leading-4 font-medium text-white block w-full hover:underline">Feedback</a>
+              <a href="/" class="text-xs leading-4 font-medium text-white block w-full hover:underline">Terms of Services</a>
+            </div>
+          </div>
+        </div>
+       </div>
+     </aside>
+     <main class="lg:ml-56 p-7 w-full">
+        <div class="border border-border-color rounded-lg shadow-[0_2px_4px_0px_rgba(70,76,94,0.12)]">
+            <div id="top-header" class="bg-[url('./img/top-header.svg')] bg-cover h-115 rounded-t-lg relative w-full max-w-full">
+              <h2 class="absolute bg-theme-red-dark h-72 w-72 text-xxl flex items-center justify-center border-2 border-white rounded-full text-white -bottom-8 left-8">R</h2>
+            </div>
+            <div id="user-detail" class="px-5 lg:px-8 pt-10 lg:pt-50px pb-4">
+              <h1 class="mb-0.5 text-black-color font-bold text-xl leading-7 inline-block">Rachel Green</h1>
+              <h2 class="text-sub-heading font-medium text-sm leading-22inline-block">rachelgreen@gmail.com</h2>
+            </div>
+
+            <div class="mb-0 border-b border-border-primary px-5 lg:px-8">
+              <ul class="flex flex-wrap gap-x-7 text-sm font-medium text-center" 
+              id="default-styled-tab" 
+              data-tabs-toggle="#default-styled-tab-content" 
+              data-tabs-active-classes="text-theme-red-color hover:text-theme-red-color border-theme-red-color border-b-2 rounded-t-lg -mb-px" 
+              data-tabs-inactive-classes="text-theme-primary-color hover:text-theme-primary-color border-theme-primary-color hover:border-theme-primary-color" 
+              role="tablist">
+                  <li role="presentation">
+                      <button class="inline-block py-2.5 font-semibold text-md leading-20" id="Account-styled-tab" data-tabs-target="#styled-Account" type="button" role="tab" aria-controls="Account" aria-selected="false">Account</button>
+                  </li>
+                  <li role="presentation">
+                      <button class="inline-block py-2.5 font-semibold text-md leading-20" id="Marketing-styled-tab" data-tabs-target="#styled-Marketing" type="button" role="tab" aria-controls="Marketing" aria-selected="false">Marketing</button>
+                  </li>
+                  <li role="presentation">
+                      <button class="inline-block py-2.5 font-semibold text-md leading-20" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+                  </li>
+                  <li role="presentation">
+                      <button class="inline-block py-2.5 font-semibold text-md leading-20" id="Additional-users-styled-tab" data-tabs-target="#styled-Additional-users" type="button" role="tab" aria-controls="Additional-users" aria-selected="false">Additional Users</button>
+                  </li>
+                  <li role="presentation">
+                    <button class="inline-block py-2.5 font-semibold text-md leading-20" id="Ticket-fee-settings-styled-tab" data-tabs-target="#styled-Ticket-fee-settings" type="button" role="tab" aria-controls="Ticket-fee-settings" aria-selected="false">Ticket Fee Settings</button>
+                </li>
+              </ul>
+            </div>
+            <div id="default-styled-tab-content">
+              <div class="hidden rounded-lg" id="styled-Account" role="tabpanel" aria-labelledby="Account-tab">
+                <div class="p-5 lg:p-8 max-h-[43.5vh] overflow-auto">
+                  <form class="xl:max-w-screen-xl lg:max-w-1012">
+                    <div class="mb-4">
+                      <h2 class="text-sm leading-22 text-secondary-color font-bold">Basic Indivation</h2>
+                      <h3 class="text-md leading-20 text-sub-heading font-medium">Your name, email and organization info</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-4">
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          First Name
+                        </span>
+                        <input type="text" name="firstName" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="First Name" />
+                      </label>
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Last Name
+                        </span>
+                        <input type="text" name="lastName" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Last Name" />
+                      </label>
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Email Address
+                        </span>
+                        <input type="email" name="emailAddress" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Email address" />
+                      </label>
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Organization Name
+                        </span>
+                        <input type="text" name="organizationName" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Organization Name" />
+                      </label>
+                    </div>
+      
+                    <hr class="my-6" />
+      
+                    <div class="mb-4">
+                      <h2 class="text-sm leading-22 text-secondary-color font-bold">Password</h2>
+                      <h3 class="text-md leading-20 text-sub-heading font-medium">Click “Change password” to update password and leave the field blank to keep the current</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-4 items-end">
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Current Password
+                        </span>
+                        <input type="password" name="currentPassword" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Current Password" autocomplete="on" />
+                      </label>
+                      <div class="block">
+                        <button type="button" class="rounded-lg border border-border-color bg-btn-secondary text-secondary-color hover:bg-white px-4 py-9px text-sm leading-18 font-semibold">Change Password</button>
+                      </div>
+                    </div>
+      
+                    <hr class="my-6" />
+      
+                    <div class="mb-4">
+                      <h2 class="text-sm leading-22 text-secondary-color font-bold">Address</h2>
+                      <h3 class="text-md leading-20 text-sub-heading font-medium">Update your address details here</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-4">
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Address 1
+                        </span>
+                        <input type="text" name="address1" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Address 1" />
+                      </label>
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Address 2
+                        </span>
+                        <input type="text" name="address2" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Address 2" />
+                      </label>
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          City
+                        </span>
+                        <input type="text" name="city" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="City" />
+                      </label>
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          State
+                        </span>
+                        <select name="state" class="mt-1 pl-3.5 pr-8 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none appearance-none bg-[url('./img/ic-select.svg')] bg-no-repeat bg-[length:18px_18px] bg-[center_right_14px]">
+                          <option>State 1</option>
+                          <option>State 2</option>
+                          <option>State 3</option>
+                        </select>
+                      </label>
+                    </div>
+      
+                    <hr class="my-6" />
+      
+                    <div class="mb-4">
+                      <h2 class="text-sm leading-22 text-secondary-color font-bold">Contact Info</h2>
+                      <h3 class="text-md leading-20 text-sub-heading font-medium">Update your contact info here</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-4">
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Phone Number
+                        </span>
+                        <div class="relative">
+                          <input type="text" name="phoneNumber" class="mt-1 pl-90px pr-3.5 py-2 bg-white border border-border-primary block w-full rounded-md :focusborder-border-primary focus:outline-none text-md leading-20 font-medium" placeholder="Type here" />
+                          <div class="absolute inset-y-0 left-0 flex items-center p-1">
+                            <label for="countryCode" class="sr-only">Country Code</label>
+                            <select id="countryCode" name="countryCode" class="h-full w-76 border border-btn-secondary block rounded-md appearance-none bg-btn-secondary bg-[url('./img/ic-select-gray.svg')] bg-no-repeat bg-[length:14px_14px] bg-[center_right_8px] :focusborder-border-primary focus:outline-none py-1 pl-2 pr-26px text-primary-color text-md leading-20 font-medium">
+                              <option>+91</option>
+                              <option>+1</option>
+                              <option>+67</option>
+                            </select>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+      
+                    <hr class="my-6" />
+      
+                    <div class="mb-4">
+                      <h2 class="text-sm leading-22 text-secondary-color font-bold">Feature Additional-users</h2>
+                      <h3 class="text-md leading-20 text-sub-heading font-medium">Update your ticket protection setting</h3>
+                    </div>
+                    <div class="bg-card-bg rounded-large px-6 py-5 lg:flex lg:flex-wrap gap-7 items-center">
+                      <div class="flex-1 mb-7 lg:mb-0">
+                        <h2 class="text-sm leading-22 text-secondary-color font-bold">Feature Additional-users</h2>
+                        <p class="text-md leading-20 text-sub-heading font-medium">
+                          Encourage more ticket sales with no additional work or additional cost to your event! Ticket Protection gives ticket buyers the option to pay an additional fee for a refundable booking upgrade when purchasing tickets.Your event's refund policy remains intact. All refund claim submissions, approval decisions, and refunds are managed and paid out by the Ticket Protection service. Refunds awarded through this service do not come out of your pocket.
+                        </p>
+                      </div>
+                      <div class="relative inline-block w-38 align-middle select-none transition duration-200 ease-in">
+                        <label class="inline-flex items-center cursor-pointer">
+                          <input type="checkbox" value="" class="sr-only peer">
+                          <div class="relative w-38 h-5 bg-border-color peer-focus:outline-none peer-focus:ring-0 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-color after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-theme-red-color"></div>
+                        </label>
+                      </div>
+                    </div>
+      
+                    <hr class="my-6" />
+      
+                    <div class="mb-4">
+                      <h2 class="text-sm leading-22 text-secondary-color font-bold">Admin Options</h2>
+                      <h3 class="text-md leading-20 text-sub-heading font-medium">Update your admin options</h3>
+                    </div>
+                    <div class="grid grid-cols-1 divide-y bg-card-bg rounded-large px-5 max-w-660 mb-4">
+                      <div class="py-4 flex gap-x-4 items-center">
+                        <div class="flex-1 text-md leading-20 text-secondary-color font-medium">
+                          Enable Client to Export Attendees
+                        </div>
+                        <div class="relative inline-block w-38 align-middle select-none transition duration-200 ease-in">
+                          <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="relative w-38 h-5 bg-border-color peer-focus:outline-none peer-focus:ring-0 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-color after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-theme-red-color"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="py-4 flex gap-x-4 items-center">
+                        <div class="flex-1 text-md leading-20 text-secondary-color font-medium">
+                          Require Billing
+                        </div>
+                        <div class="relative inline-block w-38 align-middle select-none transition duration-200 ease-in">
+                          <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="relative w-38 h-5 bg-border-color peer-focus:outline-none peer-focus:ring-0 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-color after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-theme-red-color"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="py-4 flex gap-x-4 items-center">
+                        <div class="flex-1 text-md leading-20 text-secondary-color font-medium">
+                          Show CCA Banner
+                        </div>
+                        <div class="relative inline-block w-38 align-middle select-none transition duration-200 ease-in">
+                          <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="relative w-38 h-5 bg-border-color peer-focus:outline-none peer-focus:ring-0 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-color after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-theme-red-color"></div>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="py-4 flex gap-x-4 items-center">
+                        <div class="flex-1 text-md leading-20 text-secondary-color font-medium">
+                          Enable Affirm via Stripe
+                        </div>
+                        <div class="relative inline-block w-38 align-middle select-none transition duration-200 ease-in">
+                          <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="relative w-38 h-5 bg-border-color peer-focus:outline-none peer-focus:ring-0 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-color after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-theme-red-color"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-4 items-end mb-4">
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Default Event Fee
+                        </span>
+                        <div class="relative">
+                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
+                            <span class="text-secondary-color text-lg font-bold">$</span>
+                          </div>
+                          <input type="text" name="defaultEventFee" class="mt-1 pl-3.5 pr-6 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Default Event Fee" />
+                        </div>
+                      </label>
+                      <div class="block">
+                        <button type="button" class="rounded-lg border border-theme-red-color bg-white px-4 py-9px text-sm leading-18 font-semibold text-theme-red-color">Export Attendees</button>
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-1 divide-y bg-card-bg rounded-large px-5 max-w-660 mb-4">
+                      <div class="py-4 flex gap-x-4 items-center">
+                        <div class="flex-1">
+                          <p class="text-md leading-20 text-secondary-color font-medium mb-1.5">
+                            Mark this user a test user
+                          </p>
+                          <p class="text-sm leading-18 text-sub-heading">
+                            This removes the user and their activity from any public data and all orders from our reporting
+                          </p>
+                        </div>
+                        <div class="relative inline-block w-38 align-middle select-none transition duration-200 ease-in">
+                          <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer">
+                            <div class="relative w-38 h-5 bg-border-color peer-focus:outline-none peer-focus:ring-0 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-color after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-theme-red-color"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+      
+                    <hr class="my-6" />
+      
+                    <div class="mb-4">
+                      <h2 class="text-sm leading-22 text-secondary-color font-bold">Campaign Details</h2>
+                      <h3 class="text-md leading-20 text-sub-heading font-medium">Update your campaign details</h3>
+                    </div>
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-5 gap-y-4">
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Source
+                        </span>
+                        <input type="text" name="source" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Source" />
+                      </label>
+                    
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Campaign
+                        </span>
+                        <input type="number" name="campaign" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Campaign" />
+                      </label>
+                    
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Medium
+                        </span>
+                        <input type="email" name="medium" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Medium" />
+                      </label>
+                    
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Content
+                        </span>
+                        <input type="text" name="content" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Content" />
+                      </label>
+                    
+                      <label class="block">
+                        <span class="block text-sm leading-18 font-medium text-primary-color">
+                          Term
+                        </span>
+                        <input type="text" name="term" class="mt-1 px-3.5 py-2 bg-white border border-border-primary block w-full rounded-md text-md leading-20 font-medium text-secondary-color :focusborder-border-primary focus:outline-none" placeholder="Term" />
+                      </label>
+                    </div>
+                  </form>
+                </div>
+                <div id="tabFooter" class="p-8 flex gap-2.5 border-t border-border-primary mt-20">
+                  <button type="button" class="rounded-lg border border-theme-red-color bg-theme-red-color text-white px-4 py-9px text-sm leading-18 font-semibold hover:bg-white hover:text-secondary-color">Save Changes</button>
+                  <button type="button" class="rounded-lg border border-border-color bg-btn-secondary text-secondary-color px-4 py-9px text-sm leading-18 font-semibold hover:bg-white">Discard Changes</button>
+                </div>
+              </div>
+              <div class="hidden p-5 lg:p-8 rounded-lg" id="styled-Marketing" role="tabpanel" aria-labelledby="Marketing-tab">
+                  <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Marketing tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+              <div class="hidden p-5 lg:p-8 rounded-lg" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
+                  <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+              <div class="hidden p-5 lg:p-8 rounded-lg" id="styled-Additional-users" role="tabpanel" aria-labelledby="Additional-users-tab">
+                  <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Additional-users tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+              </div>
+              <div class="hidden p-5 lg:p-8 rounded-lg" id="styled-Ticket-fee-settings" role="tabpanel" aria-labelledby="Ticket-fee-settings-tab">
+                <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Ticket-fee-settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            </div>
+            </div>
+
+        </div>
+     </main>
+  
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
